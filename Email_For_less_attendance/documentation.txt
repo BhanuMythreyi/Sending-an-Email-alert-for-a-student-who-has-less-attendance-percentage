@@ -1,0 +1,12 @@
+Imported packages
+smtplib and EmailMessage from email.message
+
+In this code there are 3 different functions
+1. sendingMail: which used to send mail for the concerned student, this function stores the sender's/user's mail id and password beforehand 
+2. EmailInitiator: which is used to decide whether or not to send an email to the student regarding his/her attendance percentage. Here 80 percent is taken into consideration so that we could alert the student beforehand. This function also contains very important details like the subject of the mail and the content of the mail too apart from containing the receiver's mail id
+3. Attendance_Percentage_calculator: which is used to calculate the attendance of the student based on number of subjects and the individual percentage of attendance in each subject. The input for the number of subjects and the individual subjects attendance is taken dynamically and the average is calculated.Using this average percentage it calls the EmailInitiator function
+
+
+Apart from these a dictionary named dictionary_of_Student_EmailIDs is also defined. In which the roll numbers of students is mapped with the email id. This dictionary will be accessed in the EmailInitiator function
+
+Everything is automated except the rollnumber of student and his individual attendance percentage. Those details are to be entered dynamically
