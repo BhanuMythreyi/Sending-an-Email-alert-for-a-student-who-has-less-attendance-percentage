@@ -39,7 +39,7 @@ def Attendance_Percentage_calculator(roll_number_of_student):
         percentage = int(input())
         sum += percentage
 
-    Final_percentage = sum/subjects
+    Final_percentage = int(sum/subjects)
     EmailInitiator(Final_percentage,roll_number_of_student)
 
 RollNumber = int(input("Enter Student's Roll Number: "))
