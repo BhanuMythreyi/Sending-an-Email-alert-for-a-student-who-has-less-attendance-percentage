@@ -6,7 +6,7 @@ def sendingMail(receiver_mail_id,subject,content):
     server.ehlo()
     server.starttls()
     sender_mail_id = 'sendermail@gmail.com'
-    password = 'lofeoknpalhoewha'
+    password = 'password'
     server.login(sender_mail_id,password)
     email = EmailMessage()
     email['From'] = sender_mail_id
